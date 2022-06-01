@@ -1,0 +1,93 @@
+.header
+{
+	padding: 2rem 0;
+	background: $Black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	border-width: 0.5rem;
+	border-bottom-style: solid;
+	border-image: linear-gradient(to right, $Red, $Blue);
+	border-image-slice: 1;
+
+	position: relative;
+	overflow: hidden;
+
+	i
+	{
+		display: block;
+		position: absolute;
+		color: #fff;
+
+		opacity: 0.15;
+		font-size: calc(2.5rem + 5 * (100vw / 150));
+	}
+
+	h1
+	{
+		font-weight: 300;
+		font-size: 1.5rem;
+		color: #fff;
+		letter-spacing: 0.25rem;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 0.25rem;
+	}
+
+	h2
+	{
+		font-weight: 600;
+		font-size: 3rem;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px), (max-height: 576px) {
+	.header {
+		display: none;
+	}
+}
+
+.fa-gulp
+{
+    left: 0;
+    bottom: -25%;
+}
+
+.fa-html5
+{
+	left: 12.5%;
+	top: -25%;
+}
+
+.fa-vuejs {
+	bottom: -35%;
+    left: 25%;
+}
+
+.fa-sass
+{
+	top: -25%;
+}
+
+.fa-react {
+	bottom: -35%;
+    right: 25%;
+}
+
+
+.fa-angular {
+	right: 12.5%;
+	top: -25%;
+}
+
+.fa-git
+{
+    right: 0;
+    bottom: -25%;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="dist/css/simplebar.min.css">
+	<link rel="stylesheet" href="dist/css/style.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap">
+	<title>Dmitriy Hulpe</title>
+</head>
+<body>
+	<aside class="sidebar" id="sidebar">
+		<header class="sidebar__header">
+			<img class="sidebar__image" src="source/images/avatar.jpg" alt="#">
+		</header>
+		<nav class="sidebar__navigation">
+			<a href="index.html" data-title="About me"><span>About me</span></a>
+			<a href="https://freelancehunt.com/freelancer/dmitriyhulpe.html" data-title="Freelance"><span>Freelance</span></a>
+			<a href="blog.html" data-title="Blog"><span>Blog</span></a>
+			<a href="timeline.html" data-title="Timeline"><span>Timeline</span></a>
+			<a href="#" data-modal="contact" data-title="Contact"><span>Contact</span></a>
+		</nav>
+		<div class="sidebar__logo">
+			<h1><span class="typewrite" data-period="2000" data-rotate='["Dmitriy Hulpe", "Frontend Developer"]'></span></h1>
+		</div>
+		<div class="sidebar__burger" id="burger">
+			<span></span>
+		</div>
+		<footer class="sidebar__footer">
+			<ul class="sidebar__icons">
+				<li><a href="https://github.com/dmitriyhulpe"><i class="fab fa-github-alt"></i></a></li>
+				<li><a href="https://t.me/dmitriyhulpe"><i class="fab fa-telegram-plane"></i></a></li>
+				<li><a href="https://twitter.com/dmitriyhulpe"><i class="fab fa-twitter"></i></a></li>
+			</ul>
+			<div class="sidebar__copyright">
+				<p>All rights reserved</p>
+			</div>
+		</footer>
+	</aside>
+	<main class="main">
+		<header class="header" id="header">
+			<h1>Dmitriy Hulpe</h1>
+			<h2>Frontend Developer</h2>
+			<i class="layer fab fa-gulp" data-temp="1.25"></i>
+			<i class="layer fab fa-html5" data-temp="1.25"></i>
+			<i class="layer fab fa-vuejs" data-temp="1.25"></i>
+			<i class="layer fab fa-sass" data-temp="1.25"></i>
+			<i class="layer fab fa-react" data-temp="1.25"></i>
+			<i class="layer fab fa-angular" data-temp="1.25"></i>
+			<i class="layer fab fa-git" data-temp="1.25"></i>
+		</header>
+		<section class="section" data-simplebar data-simplebar-auto-hide="false">
+			<div class="container">
+				<div class="section__header">
+					<h3 class="section__title">Here I will leave different entries</h3>
+					<p class="section__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur temporibus voluptate accusantium!</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div class="overlay" id="contact">
+		<div class="modal">
+			<div class="modal__line"></div>
+			<div class="modal__title">
+				<h3>Drop a Line to Contact me</h3>
+			</div>
+			<form class="modal__form" action="#" method="#" id="form">
+				<div class="form__row">
+					<div class="form__input">
+						<input class="required" type="text" required name="name">
+						<span class="underline"></span>
+						<label>Name</label>
+					</div>
+					<div class="form__input">
+						<input class="email required" type="text" required name="email">
+						<span class="underline"></span>
+						<label>Email</label>
+					</div>
+				</div>
+				<div class="form__input">
+					<input class="message required" type="text" required name="message">
+					<span class="underline"></span>
+					<label>Message</label>
+				</div>
+				<button class="form__button button" type="submit">Submit</button>
+				<button class="form__button button close" type="button">Close</button>
+			</form>
+		</div>
+	</div>
+	<script src="source/js/simplebar.min.js"></script>
+	<script src="source/js/font.awesome.min.js"></script>
+	<script src="dist/js/script.js"></script>
+	<script src="dist/js/form.js"></script>
+</body>
+</html>

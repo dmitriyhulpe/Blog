@@ -1,0 +1,148 @@
+@import "variables";
+@import "reset";
+
+html
+{
+	font-size: 62.5%;
+}
+
+body
+{
+	font-size: 1.5rem;
+	font-family: $Font;
+
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.main
+{
+	padding-left: 30rem;
+	height: 100%;
+	background: $Light;
+}
+
+@media (max-width: 768px), (max-height: 576px)
+{
+	.main
+	{
+		padding-left: 0;
+	}
+}
+
+.container
+{
+	max-width: 120rem;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+section.lock {
+	overflow: hidden;
+}
+
+.section
+{
+	padding: 4rem 0;
+	min-height: 100%;
+	overflow: auto;
+	height: calc(100vh - 108.5px);
+
+	&__header
+	{
+		margin-bottom: 4rem;
+	}
+
+	&__footer
+	{
+		margin-top: 4rem;
+	}
+
+	&__title
+	{
+		text-align: center;
+		font-size: 3rem;
+		text-transform: uppercase;
+		color: #333;
+		margin-bottom: 0.5rem;
+	}
+
+	&__description
+	{
+		text-align: center;
+	}
+}
+
+@media(max-width: 768px), (max-height: 576px) {
+	.section {
+		height: calc(100vh - 40px);
+	}
+}
+
+.simplebar-content-wrapper {
+	padding-right: 10px;
+}
+
+.simplebar-track.simplebar-vertical {
+	background: darken($Light, 10%);
+}
+
+.simplebar-scrollbar::before {
+	background: $Dark;
+}
+
+.button
+{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: $Dark;
+
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+.button span
+{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: ripples 1s linear;
+}
+
+@keyframes ripples
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%
+    {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
+
+@import "blocks/header";
+@import "blocks/sidebar";
+
+@import "blocks/about";
+@import "blocks/blog";
+@import "blocks/timeline";
+@import "blocks/contact";
+
+@import "blocks/modal";
