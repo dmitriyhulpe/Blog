@@ -1,1 +1,1 @@
-# Layout of my personal blog
+# Layout of my Personal Blog
